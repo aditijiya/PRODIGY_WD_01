@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Management Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #f27bce, #f4c698);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .form-header {
+            margin-bottom: 20px;
+        }
+        .form-group {
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+        .form-group i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #6c757d;
+        }
+        .form-control {
+            padding-left: 40px;
+            border-radius: 25px;
+            background: #f1f1f1;
+            border: none;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .form-control:focus {
+            box-shadow: 0 0 0 0.2rem rgba(255, 126, 95, 0.25);
+        }
+        .form-check {
+            text-align: left;
+            margin-bottom: 1.5rem;
+        }
+        .btn-primary {
+            background: #f1856a;
+            border: none;
+            border-radius: 25px;
+            padding: 10px;
+            font-size: 1rem;
+            transition: background 0.3s ease;
+        }
+        .btn-primary:hover {
+            background: #feb47b;
+        }
+        .no-account {
+            margin-top: 20px;
+        }
+        .no-account a {
+            color: #ff7e5f;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .no-account a:hover {
+            color: #feb47b;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2 class="form-header">Gym Login</h2>
+        <form action="index.html" method="GET">
+            <div class="form-group">
+                <i class="fa fa-envelope"></i>
+                <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <i class="fa fa-lock"></i>
+                <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="rememberMeCheck">
+                <label class="form-check-label" for="rememberMeCheck">
+                    Remember Me
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+        <div class="no-account">
+            <p>Don't have an account? <a href="#">Sign up here</a></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
